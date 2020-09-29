@@ -1,0 +1,166 @@
+.tm-bg-color-primary {
+    background-color: #76cdd8;
+}
+
+.tm-text-color-primary {
+    color: #76cdd8;
+}
+
+.tm-md-flex-center > p,
+.tm-flex-col {
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+
+.tm-card::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content:"";
+    border-top: 60px solid transparent;
+    border-left: 60px solid transparent;
+}
+
+.tm-card:hover{
+    color: #76cdd8;
+    transition: 1s;
+}
+
+.tm-card:hover::before {
+    border-top: 60px solid #76cdd8;
+    transition: 1s;
+}
+
+.tm-col-md-reverse::before{
+    top:0px;
+    left: 0px;
+    width: 0; 
+    height: 0; 
+    border-right: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-left: 0px;
+}
+
+.tm-mb-30  .tm-flex-col > p {
+    color: #666666;
+}
+
+
+.tm-md-flex-center .tm-quote {
+    font-size: 1.2rem;
+}
+
+.tm-col-md-reverse{
+    display:flex;
+    flex-direction: row-reverse;
+    
+}
+
+
+.tm-mb-30{
+    margin-bottom: 2rem;
+}
+
+.tm-flex-col p{
+    padding-right: 1.5rem;
+}
+
+
+.tm-flex-center > .tm-md-flex-center {
+    padding-right: 1rem;
+}
+
+.col-sm-12 .tm-flex-center {
+    margin-right: 0px;
+}
+
+.tm-bg-color-secondary, .btn {
+    background-color:#009a9a;
+}
+
+.tm-pricing-table {
+    border-color:#009a9a;
+}
+
+.tm-pricing-table:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+    transition: 0.8s;
+}
+
+
+.tm-form-header {
+    background-color: #1dd5d5;
+}
+
+
+.pr-md-5 {
+    height: 25rem;
+}
+
+.tm-contact-form {
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    bottom: -50px;        
+}
+
+.tm-form-header, .tm-form-footer {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    border:1px solid transparent;
+}
+
+.btn:hover {
+    background-color: #76cdd8;
+    border: 1px solid transparent;
+    transition: 0.8s;
+}
+
+.tm-pricing-table .btn:hover {
+    border:1px solid #009a9a;
+    background: #24d4d4;
+
+}
+
+.img-fluid:hover {
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+
+.tm-pricing-discount__star {
+    color: #ff0000;
+}
+
+.tm-pricing-discount__text {
+    color: #1dd5d5;
+}
+
+.tm-pricing-table:hover .tm-pricing-discount {
+    display: block;
+}
+
+.form-control:focus, select:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4; 
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(118, 205, 216);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
