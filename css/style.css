@@ -1,161 +1,247 @@
-.tm-bg-color-primary {
-    background-color: #76cdd8;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-.tm-text-color-primary {
-    color: #76cdd8;
+p:not(.over_head_title) {
+    font-style: italic;
 }
 
-.tm-md-flex-center > p,
-.tm-flex-col {
-    font-size: 1rem;
-    font-style: normal;
-    margin-bottom: 1.5rem;
+.content_wrap, .header_wrap, .footer_wrap{
+    max-width: 1140px;
 }
 
-.tm-card::before {
+
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-color: #0b013c ;
+    background-size: contain;
+    background-position: left;
+    color: #fff;
+}
+
+.header_wrap {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 13em;
+    margin-left: 12rem;
+    width: 550px;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.header_article {
+    height: 100%;
+}
+
+.header_logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    border: 2px solid #fff;
+    padding: 5px;
+}
+
+.header_title {
+    font-size: 6em;
+    margin-bottom: auto;
+    margin-top: 1.3em;
+}
+
+.header_sub_title {
+    font-size: 1.5rem;
+    font-style: normal !important;
+}
+
+.header_text {
+    width: 27rem;
+}
+
+.form {
+    margin-top: 0.5rem;
+}
+
+.form input {
+    padding: 0 10px;
+    width: 24rem;
+    height: 2rem;
+    margin: 5px auto;
+}
+
+.form button{
+    font-size: medium;
+    background-color: #f8cb8a;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    margin:5px 10px;
+    align-self: center;
+}
+
+.form button:hover {
+    background-color: #f6bb66;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    background-color: #fefaf3; 
+      
+}
+
+.content_wrap {
+    align-self: center;    
+}
+
+.about_wrap, .educational_wrap .common_article_wrap {
+    width: 55em;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.content_wrap .head_text {
+    color: #808080;
+
+}
+
+.over_head_title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.head_title {
+    position: relative;
+    font-size: 2.8rem;
+    margin-top: 0.5rem;
+}
+
+.head_title::after {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    content:"";
-    border-top: 60px solid transparent;
-    border-left: 60px solid transparent;
+    left: 44%;
+    bottom: -50%;
+    content: "";
+    width: 5rem;
+    height: 0.5rem;
+    background-color: #f6bb66;
 }
 
-.tm-card:hover{
-    color: #76cdd8;
-    transition: 1s;
+.about_wrap .head_text, .educational_wrap .head_text {
+    margin: 3.5rem auto;
 }
 
-.tm-card:hover::before {
-    border-top: 60px solid #76cdd8;
-    transition: 1s;
+.content_wrap img {
+    max-width: 100%;
 }
 
-.tm-col-md-reverse::before{
-    top:0px;
-    left: 0px;
-    width: 0; 
-    height: 0; 
-    border-right: 60px solid transparent;
-    border-top: 60px solid transparent;
-    border-left: 0px;
+.welcome_section {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 8rem;
 }
 
-.tm-mb-30  .tm-flex-col > p {
-    color: #666666;
-}
-
-
-.tm-md-flex-center .tm-quote {
-    font-size: 1.2rem;
-}
-
-.tm-col-md-reverse{
-    display:flex;
-    flex-direction: row-reverse;
+.welcome_section img {
+    width: 65%;
     
 }
 
-
-.tm-mb-30{
-    margin-bottom: 2rem;
+.welcome_section .right_block {
+    padding: 1rem;
+    padding-right: 2.8rem;
 }
 
-.tm-flex-col p{
-    padding-right: 1.5rem;
+.welcome_section .head_title::after {
+    bottom:-30%;
+    left: 0;
 }
 
-
-.tm-flex-center > .tm-md-flex-center {
-    padding-right: 1rem;
+.welcome_section .head_title {
+    margin-bottom: 4rem;
 }
 
-.col-sm-12 .tm-flex-center {
-    margin-right: 0px;
+.blocks_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
-.tm-bg-color-secondary, .btn {
-    background-color:#009a9a;
+.block {
+    width: 45%;
+    background-color: #fff;
 }
 
-.tm-pricing-table {
-    border-color:#009a9a;
+.block p {
+    padding: 0 1rem;
 }
 
-.tm-pricing-table:hover {
-    box-shadow: 0 0 0 0.2rem #24d4d4;
-    transition: 0.8s;
+.educational_wrap {
+    background-color: #0b013c;
+    background-image: url("../img/space-bg.png");
+    color: #fff;
+    margin-bottom: -1.2rem;    
+    
 }
 
-
-.tm-form-header {
-    background-color: #1dd5d5;
+.educational_wrap .common_article_wrap {
+    box-sizing: border-box;
+    margin: 8rem auto;
+    padding: 0 2.5rem;
 }
 
-
-.pr-md-5 {
-    height: 25rem;
+.educational_wrap .head_title::after {
+    bottom: -25%;
 }
 
-.tm-contact-form {
-    position: relative;
-    z-index: 2;
-    top: -50px;
-    bottom: -50px;        
+.footer {
+    
+    background-image: url("../img/footer-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 10rem 0 5rem;
+    width: 100%;
 }
 
-.tm-form-header, .tm-form-footer {
-    position: relative;
-    z-index: 1;
+.footer_wrap {
+    align-self: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn {
-    border:1px solid transparent;
-}
-
-.btn:hover {
-    background-color: #76cdd8;
-    border: 1px solid transparent;
-    transition: 0.8s;
-}
-
-.tm-pricing-table .btn:hover {
-    border:1px solid #009a9a;
-    background: #24d4d4;
+.footer_left_content {
+    color: #fff;
 
 }
 
-.img-fluid:hover {
-    transform: scale(1.1,1.1);
-    transition: 1s;
+.footer_left_content h3{
+    font-size: 2.3rem;
 }
 
-.tm-pricing-discount__star {
-    color: #ff0000;
+.footer_info {
+    line-height: 10px;  
 }
 
-.tm-pricing-discount__text {
-    color: #1dd5d5;
+.footer_info p {
+    font-style: normal;
 }
 
-.tm-pricing-table:hover .tm-pricing-discount {
-    display: block;
+.footer_info a {
+    text-decoration: none;
+    color: #fff;
 }
-
-.form-control:focus, select:focus {
-    border-color: #24d4d4;
-    box-shadow: 0 0 0 0.2rem #24d4d4; 
-}
-
-button[type="submit"]:hover {
-    background-color: rgb(118, 205, 216);
-}
-
-
-
-
-
 
 
 
