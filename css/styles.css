@@ -82,8 +82,9 @@ body {
 }
 
 .top-section__article {
-	width: 100%;
+	width: 98%;
 	position: absolute;
+	left: 2%;
 	top: 45%;
 }
 
@@ -91,6 +92,11 @@ body {
 	margin-bottom: 1rem;
 	font-weight: 200;
 	font-size: 2.3rem;
+	max-width: 100%;
+}
+
+.top-section__text {
+	max-width: 100%;
 }
 
 .main-content__wrapper {
