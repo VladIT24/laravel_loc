@@ -42,8 +42,6 @@ skip.addEventListener('click', skipHandler);
 skip.addEventListener('click', disableBtn);
 let not_repeat = [];
 
-console.log(not_repeat);
-
 function pseudoStart() {
     let pseudo = document.querySelector('.pseudo-start');
     pseudo.style.display = 'none';
